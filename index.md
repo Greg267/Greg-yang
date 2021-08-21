@@ -17,7 +17,7 @@
 > 跨列合并
 <table width="300">
 <tr>
-<td colspan="2">1</td><td>3</td>
+<td colspan="2"><center>1</center></td><td>3</td>
 </tr>
 <tr>
 <td>4</td><td>5</td><td>6</td>
