@@ -15,6 +15,7 @@
 
 * 还学习了怎么将表格里的单元格合并，如
 > 跨列合并
+> 
 <table width="300">
 <tr>
 <td colspan="2"><center>1</center></td><td>3</td>
@@ -26,7 +27,9 @@
 <td>7</td><td>8</td><td>9</td>
 </tr>
 </table>
+
 > 跨行合并
+> 
 <table width="300">
 <tr>
 <td rowspan="2">1</td><td>2</td><td>3</td>
@@ -38,3 +41,4 @@
 <td>7</td><td>8</td><td>9</td>
 </tr>
 </table>
+
