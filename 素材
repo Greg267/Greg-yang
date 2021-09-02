@@ -1,1 +1,69 @@
+# **接口文档模板markdown版**
 
+![0](<https://pic.imlehr.com/uploads/typora/daily.png> )
+
+## **1、登录个人主页**
+
+### **接口给功能**
+
+> 登录个人的主页
+
+### **URL**
+
+> 链接
+
+### **支持格式**
+
+> JSON
+
+### **HTTP请求格式**
+
+> GET
+
+### **请求参数**
+
+| 左对齐标题 | 右对齐标题 | 居中对齐标题 |
+| :------| ------: | :------: |
+| 短文本 | 中等文本 | 稍微长一点的文本 |
+| 稍微长一点的文本 | 短文本 | 中等文本 |
+
+</tr>
+</table>
+
+### **返回字段**
+
+<table border="1" >
+<th>名称</th>
+<th>类型</th>
+<th>简介</th>
+<tr>
+<td>
+result
+</td>
+<td>
+String
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+str
+</td>
+<td>
+String
+</td>
+<td>
+登陆密码
+</td>
+
+</tr>
+</table>
+
+### **接口实例**
+
+> 链接
+
+    {
+        https://glimmer.space/#About_us
+    }
