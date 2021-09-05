@@ -5,9 +5,6 @@
 */
 
 /* Wrapper */
-	a:hover {
-		color: skyblue;
-	}
 	#wrapper {
 		opacity: 1 !important;
 	}
