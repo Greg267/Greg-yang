@@ -25,3 +25,6 @@
 		#header nav li {
 			opacity: 1 !important;
 		}
+		a:hover {
+			color: skyblue;
+		}
