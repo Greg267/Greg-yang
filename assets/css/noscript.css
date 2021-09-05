@@ -5,7 +5,9 @@
 */
 
 /* Wrapper */
-
+	a:hover {
+		color: skyblue;
+	}
 	#wrapper {
 		opacity: 1 !important;
 	}
@@ -25,6 +27,4 @@
 		#header nav li {
 			opacity: 1 !important;
 		}
-		a:hover {
-			color: skyblue;
-		}
+		
