@@ -73,18 +73,18 @@ body {
 .nav ul li {
     float:left;
     height: 80px;
-    padding: 0 30px;
     line-height: 80px;
     font-family: 'icomoon';
 }
 .nav ul li span {
     position: relative;
-    top: 1.5px;
-    right: 1px;
+    top: 2px;
 }
 .nav ul li a {
+    display:inline-block;
     color: black;
     font-size: 18px;
+    padding:0 25px;
 }
 .left {
     overflow: hidden;
