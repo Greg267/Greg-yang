@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?pyzbi1');
+    src: url('fonts/icomoon.eot?pyzbi1#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?pyzbi1') format('truetype'),
+        url('fonts/icomoon.woff?pyzbi1') format('woff'),
+        url('fonts/icomoon.svg?pyzbi1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+} 
+body {
+    background-color: #eaeaea;
+}
+.head {
+    background: url(../images/支页背景.jpg) no-repeat scroll;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+.header {
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(230, 223, 223,.1);
+    position: fixed;
+    z-index: 1;
+}
+.logo{
+    float: left;
+    height: 80px;
+    margin-left: 200px;
+}
+.logo img{
+    float:left;
+    transition: all 0.5s;
+}
+.logo img:hover{
+    opacity: 0.5;
+    transform: rotate(360deg);
+}
+.logo span {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+}
+.nav {
+    float: left;
+    height: 80px;
+    margin-left: 240px;
+}
+.nav ul li {
+    float:left;
+    height: 80px;
+    padding: 0 30px;
+    line-height: 80px;
+    font-family: 'icomoon';
+}
+.nav ul li span {
+    position: relative;
+    top: 1.5px;
+    right: 1px;
+}
+.nav ul li a {
+    color: black;
+    font-size: 18px;
+}
+.left {
+    overflow: hidden;
+    float: left;
+    width: 900px;
+    border-radius: 10px;
+    margin-left: 150px;
+    background-color: #fff;
+    box-shadow:0 1px 20px 2px rgb(0, 0, 0 , 30%);
+    position: relative;
+    bottom: 75px;
+}
+.left-head {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid black;
+    padding: o;
+}
+.left-head h1 {
+    text-align: center;
+}   
+.content {
+    padding: 50px;
+}
+.left .content p {
+    text-indent: 2em;
+    line-height: 2.5em;
+}
+.left .content img{
+    width: 800px;
+    box-shadow:0 1px 10px 1px rgba(0, 0, 0,.5);
+    border-radius: 10px;
+}
+.right {
+    float: right;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right:85px ;
+    box-shadow:0 1px 20px 2px rgb(0, 0, 0 , 30%);
+    position: sticky;
+    top: 10px;
+}
+.right h2 {
+    padding: 48px;
+    padding-bottom: 10px;
+
+} 
+.right h2 span {
+    position: relative;
+    top: 1.5px;
+    right: 1px;
+    font-family: 'icomoon';
+
+}
+.right ul li a {
+    padding: 50px;
+    color:#42b983;
+    font-weight: 800;
+    line-height: 30px;
+}
+.right ul li a:hover {
+text-decoration: underline;
+}
+/* 以上可通用 */
+    

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding:0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?pyzbi1');
+    src: url('fonts/icomoon.eot?pyzbi1#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?pyzbi1') format('truetype'),
+        url('fonts/icomoon.woff?pyzbi1') format('woff'),
+        url('fonts/icomoon.svg?pyzbi1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.w {
+    width: 1150px;
+    margin: auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 20px;
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+} 
+body {
+    background-color: #eaeaea;
+}
+.head {
+    background: url(../images/bg4.jpg) no-repeat scroll;
+    width: 100%;
+    height: 930px;
+    overflow: hidden;
+    background-size:cover;
+}
+.header {
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(146, 131, 170,.5);
+    position: fixed;
+    z-index: 1;
+    color: #fff;
+}
+.logo{
+    float: left;
+    height: 80px;
+    margin-left: 200px;
+}
+.logo img{
+    float:left;
+    transition: all 0.5s;
+}
+.logo img:hover{
+    opacity: 0.5;
+    transform: rotate(360deg);
+}
+.logo span {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+}
+.nav {
+    float: left;
+    height: 80px;
+    margin-left: 240px;
+}
+.nav ul li span {
+    position: relative;
+    font-family: 'icomoon';
+    top: 2px;
+}
+.nav ul li {    
+    float:left;
+    height: 80px;
+    line-height: 80px;
+}
+.nav ul li a {
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    padding:  0 25px;
+    
+}
+.nav ul li a:hover {
+background-color: rgba(230, 223, 223,.2);
+}
+.welcome {
+    display: flex;
+    position: relative;
+    margin: 300px auto;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color:transparent;
+}
+
+ .welcome p {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 3em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(196, 156, 167), #fff, rgb(196, 156, 167));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(196, 156, 167,.3);
+    cursor: default;
+}
+.head .begin a {
+    display:block;     
+    width:150px;
+    height: 50px;
+    color: #fff;
+    background-color:rgba(230, 223, 223,0);
+    border-radius: 25px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.head .begin a:hover {
+    background-color:rgba(103, 102, 160,.5);
+}
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow:0 1px 10px 1px rgba(0, 0, 0,.5);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.content ul li {
+    overflow: hidden;
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    -webkit-border-radius:10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0; 
+    border-radius: 10px;
+    background-color:rgb(234, 234, 234);
+    margin:30px 30px;
+    transition: all 0.5s;
+}
+.content ul li:hover{
+    box-shadow:0 1px 20px 5px rgba(0, 0, 0,.5);
+    /* transform:translate(0px,-10px); */
+    transform: scale(1.05);
+}
+.content ul li img {
+    width: 500px;
+    height: 300px;
+}
+.content ul li a {
+    color: rgb(115, 166, 187);
+}
+.content ul li h1 {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 400;
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: black;
+}
+.footer p {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 1.6em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#000,#fff,#000);
+    background-repeat: no-repeat;
+    background-size:80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    cursor: default;
+}
+@keyframes animate {
+    0% {
+        background-position:-500%;
+    }
+    100% {
+        background-position:500%;
+    }
+}

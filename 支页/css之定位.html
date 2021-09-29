@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 1content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Bookmark" type="image/x-icon" href="images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style支页(通用).css">
+</head>
+
+<body>
+    <!-- footer -->
+    <div class="footer">
+        <!-- header -->
+        <div class="header">
+            <!-- logo -->
+            <div class="logo">
+                <img src="../images/logo3.png" alt="">
+                <span>Greg-yang</span>
+            </div>
+            <!-- nav -->
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html" target="_black">首页</a></li>
+                    <li><a href="#">标签</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">时间轴</a></li>
+                    <li><a href="#">Greg-yang</a></li>
+                    <li><a href="#">at作者</a></li>
+                    <li><a href="#">友人帐</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- left -->
+    <div class="left clearfix">
+        <div class="left-head"><h1>CSS</h1></div>
+        <div class="content">
+            <h2 id="dw">
+            <>css之定位
+        </h2>
+        <h3>1.静态定位</h3>
+        <p>元素默认定位方式，无定位的意思，了解即可，平常基本不使用，如要使用，其格式为 选择器 {
+            position：static；}，它的特点是按照标准流摆放位置，它没有边偏宜
+        </p>
+        <h3>2.相对定位(relative)</h3>
+        <p>
+            相对定位是元素在移动位置的时候，是相对于它原来的位置来说的，使用格式为 选择器 {
+            position：relative；},后再接top,bottom,left,right,表示分别和这些边隔的距离，它的特点是它是<strong>相对自己原来的位置</strong>来移动的，原来在标准流的位置<strong>继续占有</strong>，后面的盒子仍然以标准流的方式对待它(不脱标，继续保留原来位置)
+        </p>
+        <h3>3.绝对定位(absolute)</h3>
+        <p>
+            绝对定位是元素在移动位置的时候，是相对于它祖先(父级)元素来说的，其格式为 选择器
+            {position：absolute;}后再接top,bottom,left,right,表示分别和这些边隔的距离，它的特点是如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位。如果祖先元素有定位(相对，绝对，固定定位)，则以<strong>最近一级的有定位的祖先元素</strong>为参考点移动位置(如果父元素没有定位，则以父元素的父元素为定位(前提是父元素的父元素有我定位
+            )),而且绝对定位不再占有原先的位置(脱标)
+        </p>
+        <h4>* 子绝父相</h4>
+        <p>子级使用绝对定位，父级则需要相对定位，子级绝对定位，不会占有位置，可以放到父盒子里面的任何一个地方，不会影响其他的兄弟盒子。父盒子需要加定位限制盒子在父盒子内显示</p>
+        <h3>5.固定定位(fixed)</h3>
+        <p>固定定位是元素固定于浏览器可视区的位置，在浏览器页面滚动时元素的位置不会改变，其格式为 {position: fixed}
+            ，它的特点是以浏览器的可视窗口为参照点移动元素；跟父元素没有任何关系；不随滚动条滚动；固定定位不再占有原先的位置</p>
+        <h4>小技巧：如何让元素固定在版心右侧</h4>
+        <P>1.让固定定位的盒子left：50%，走到浏览器可视区(也可以看做版心)的一半位置</P>
+        <p>2.让固定定位的盒子margin-left：版心宽度的一半距离</p>
+        <h3>6.粘性定位(sticky)</h3>
+        <p>可以理解为相对定位和固定定位的混合，格式为 {选择器position:sticky 后必须添加top left right
+            bottom其中的一个}，它的特点是以浏览器的可视窗口为参照点移动元素；粘性定位占有原先的位置；必须添加top，left，right，bottom其中一个才有效，了解就行，兼容性较差
+        </p>
+        <h3>7.叠放次序(z-index)</h3>
+        <p>
+            在使用定位布局时，可能会出现盒子重叠的情况，此时，可以使用z-index来控制盒子的前后顺序(z轴)，其格式为 选择器 {z-index:1;}
+            数值可以是正整数，负整数或0，默认是auto。数值越大，盒子越往上，且数字后面不能加单位。如果属性值相同，则按照书写顺序，后来居上。只有定位的盒子才有z-index属性
+        </p>
+        <h3>8.拓展</h3>
+        <p>
+        <h4>a.绝对定位的盒子居中</h4>
+        <p>加了绝对定位的 盒子不能通过margin：0水平居中，但是可以通过以下计算方法实现水平和垂直居中</p>
+        <p>left：50%：让盒子的左侧移动到父级元素的水平中心位置</p>
+        <p>margin-left:-...px 让盒子向左移动自身宽度的一半</p>
+        <h4>b.定位特殊特性</h4>
+        <p>1.行内元素添加绝对或者固定定位，可以直接设置高度和宽度
+        <p>2.块级元素添加绝对或者固定定位，如果不给宽度或者高度，默认大小是内容的大小</p>
+        </p>
+        <h4>c.脱标的盒子不会触发外边距塌陷</h4>
+        <h4> 绝对定位会完全压住盒子</h4>
+        <p>浮动元素不同，只会压住它下面标准流的盒子，但是不会压住下面标准流盒子里面的文字(图片)，但是绝对定位(固定定位)会压住下面标准流所有的内容</p>
+        </p>
+        <h2 id="ys">
+            <>元素的显示与隐藏
+        </h2>
+        <h3>1.display属性</h3>
+        <p>display属性用于设置一个元素应如何显示
+        <p>display:none；隐藏对象</p>
+        <p>display：block；除了转换为块级元素之外，同时还有显示元素的意思</p>
+        <p>display隐藏元素后，不再占有原来的位置</p>
+        <h3>2.visibility可见性</h2>
+            <p>visibility:visible;元素可见</p>
+            <p>visibility:hidden;元素隐藏</p>
+            <p>visibility隐藏元素后，继续占有原来的位置</p>
+            <h3>
+                <p>如果隐藏元素想要原来位置，就用visibility：hidden</p>
+                <p>如果隐藏元素不想要原来位置，就用display：none(用处更多重点)</p>
+            </h3>
+            <h3>overflow属性</h3>
+            <p>如果说一个盒子里面的内容超过了这个盒子的容载量，那么多余的内容就会超出盒子显示</p>
+            <p>overflow:visible;溢出的内容能看到，跟不写这个属性没区别</p>
+            <p>overflow:hidden;溢出的内容不能看到，但是还存在，不是删掉</p>
+            <p>overflow:scroll;可以显示滚动条，但不管是否超出盒子，都会显示滚动条</p>
+            <p>overflow:auto;超出自动显示滚动条，不超出不显示滚动条</p>
+            </p>
+            <h2>字体图标</h2>
+            <p>轻量级：一个图标字体要比一系列额图像小很多。一旦字体加载了，图标就会马上渲染出来，减少了服务器请求</p>
+            <p>灵活性：本质是文字，可以很随意的改变颜色，产生阴影，透明效果，旋转等</p>
+            <p>兼容性：几乎支持所有的浏览器，请放心使用</p>
+            <p>注意：字体图标不能代替精灵技术，只是对工作中图标部分技术的提升和优化。</p>
+            <h3>结构和样式比较简单的小图标，就用字体图标。结构和样式比较复杂一定的小图片，就用精灵图</h3>
+        </div>
+
+    </div>
+    <!-- right -->
+    <div class="right clearfix">
+        <h2><span></span>目录</h2>
+        <ul>
+            <li><a href="#dw">1.定位</a></li>
+            <li><a href="#ys">2.元素的显示和隐藏</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
