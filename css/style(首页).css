@@ -80,6 +80,14 @@ body {
     height: 80px;
     margin-left: 240px;
 }
+.nav ul:hover li{
+    opacity: .2;
+    filter: blur(2px);
+}
+.nav ul li:hover {
+    opacity: 1;
+    filter:blur(0px);
+}
 .nav ul li span {
     position: relative;
     font-family: 'icomoon';
@@ -98,7 +106,7 @@ body {
     
 }
 .nav ul li a:hover {
-background-color: rgba(230, 223, 223,.2);
+    background-color: rgba(124, 112, 152,.2);
 }
 .welcome {
     display: flex;
@@ -111,7 +119,7 @@ background-color: rgba(230, 223, 223,.2);
     background-color:transparent;
 }
 
- .welcome p {
+.welcome p {
     position: absolute;
     font-family: sans-serif;
     font-size: 3em;
@@ -120,8 +128,9 @@ background-color: rgba(230, 223, 223,.2);
     background: linear-gradient(90deg, rgb(196, 156, 167), #fff, rgb(196, 156, 167));
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: animate 5s linear infinite;
+    animation: animate 3s linear infinite;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: rgb(196, 156, 167,.3);
     cursor: default;
 }
@@ -199,6 +208,7 @@ background-color: rgba(230, 223, 223,.2);
     background-size:80%;
     animation: animate 8s linear infinite;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     cursor: default;
 }

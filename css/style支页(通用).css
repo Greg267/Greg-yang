@@ -81,13 +81,13 @@ body {
     top: 2px;
 }
 .nav ul li a {
-    display:inline-block;
+    display: inline-block;
     color: black;
     font-size: 18px;
-    padding:0 25px;
+    padding: 0 25px;
 }
 .nav ul li a:hover {
-    background-color: rgba(124, 112, 152,.2);
+    background-color: rgba(124, 112, 152, .2);
 }
 .left {
     overflow: hidden;
@@ -118,9 +118,13 @@ body {
     line-height: 2.5em;
 }
 .left .content img{
+    transition: all 0.5s;
     width: 800px;
-    box-shadow:0 1px 10px 1px rgba(0, 0, 0,.5);
     border-radius: 10px;
+}
+.left .content img:hover {
+    transform: scale(1.05);
+    box-shadow:0 1px 10px 1px rgba(0, 0, 0,.5);
 }
 .right {
     float: right;
@@ -130,7 +134,7 @@ body {
     margin-right:85px ;
     box-shadow:0 1px 20px 2px rgb(0, 0, 0 , 30%);
     position: sticky;
-    top: 10px;
+    top: 90px;
 }
 .right h2 {
     padding: 48px;
@@ -145,7 +149,7 @@ body {
 
 }
 .right ul li a {
-    padding: 50px;
+    padding-left: 50px;
     color:#42b983;
     font-weight: 800;
     line-height: 30px;
