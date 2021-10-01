@@ -76,6 +76,14 @@ body {
     line-height: 80px;
     font-family: 'icomoon';
 }
+.nav ul:hover li{
+    opacity: .2;
+    filter: blur(2px);
+}
+.nav ul li:hover {
+    opacity: 1;
+    filter:blur(0px);
+}
 .nav ul li span {
     position: relative;
     top: 2px;
@@ -87,7 +95,7 @@ body {
     padding: 0 25px;
 }
 .nav ul li a:hover {
-    background-color: rgba(124, 112, 152, .2);
+    background-color:rgba(124, 112, 152,.2);
 }
 .left {
     overflow: hidden;
