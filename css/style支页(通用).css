@@ -121,6 +121,9 @@ body {
 .content {
     padding: 50px;
 }
+.content.right ul li {
+    padding-left: 2em;
+}
 .left .content p {
     text-indent: 2em;
     line-height: 2.5em;

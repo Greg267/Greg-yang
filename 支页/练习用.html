@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* var gra=prompt('请输入你的成绩');
+        if (gra >= 90){
+            alert ('A')
+        }else if (gra>=80 && gra<90){
+            alert ('B')
+        }else if (gra>=70&&gra<80){
+            alert ('C')
+        }else if (gra>=60&gra<70){
+            alert ('D')
+        }else{
+            alert ('E')
+        } */
+
+        // 将一位数以两位数的形式输出
+        // var num=prompt('请输入0-59之间的一个数字')
+        // num1=num>10? num: '0'+num
+        // console.log (num1) 
+
+        // 1到100的和的平均值
+        // var sum=0;
+        // for (var i=1;i<=100;i++){
+        //     sum+=i;
+        // }console.log(sum/100)
+
+        // 1到100里面奇数和偶数的和
+        // var sum1=0,sum2=0;
+        // for(var i=1; i<=100; i++){
+        //     if(i%2==0){
+        //         sum1+=i;
+        //     }else{
+        //         sum2+=i;
+        //     }
+        // }
+        // console.log(sum1+sum2)
+
+        // 1到100里面3的倍数的和
+        // var sum=0;
+        // for(var i=1; i<=100; i++){
+        //     if (i%3==0){
+        //         sum+=i;
+        //     }else{
+        //         sum+=0;
+        //     }
+        // }
+        // console.log(sum)
+
+        // 全班的平均成绩
+        // var sum=0;
+        // var ave=0;
+        // var num=prompt('请输入班级总人数');
+        // for(var i=1; i<=num; i++){  
+        //     var score=prompt('请输入第'+i+'个学生的成绩');
+        //     sum=sum+score;
+        // }
+        // ave=sum/num;
+        // alert('平均成绩为'+ave);
+
+        // 打印五行五颗一排的星星
+        // var str = '';
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var j = 1; j <= 5; j++) {
+        //         str = str + '☆';
+        //     }
+        //     str=str+'\n';
+        // }
+        // console.log(str);
+
+        // 打印五行每排星数依次减少的星星
+        // var str = '';
+        // var num=5;
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var j = num; j>=1; j--) {
+        //         str = str + '☆';
+        //     }
+        //     str = str + '\n';
+        //     num-=1;
+        // }
+        // console.log(str);
+
+
+        // 打印10行每排星数依次减少的星星
+        // var str='';
+        // for(var i=1; i<=10; i++){
+        //     for (var j = i; j<=10; j++){
+        //         str=str+'☆';
+        //     }
+        //     str=str+'\n';
+        // }
+        // console.log(str);
+
+        // 打印99乘法表
+        // var num = '';
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         num += j + 'x' + i + '=' + i * j + '\t';
+        //     }
+        //     num += '\n';
+        // }
+        // console.log(num);
+
+        // 计算1到100里面能被7整除的数的和
+        // function getSum() {
+        //     var sum = 0;
+        //     for (var i = 1; i <= 100; i++) {
+        //         if (i % 7 == 0) {
+        //             sum += i;
+        //         }
+        //     }
+        //     console.log(sum);
+        // }
+
+// 计算1到100中个位数是3的数的和
+        // var sum = 1;
+        // for (var i = 1; i <= 100; i++){
+        //     if(i % 10 == 3){
+        //         continue;
+        //     }
+        //     sum += i;
+        // }
+        // console.log(sum);
+
+// 存取钱案例
+        // var now = 100;
+        // var dec=prompt('1.存钱\n2.取钱\n3.显示余额\n4.退出');
+        // switch(dec){
+        //     case '1' :var cunru=prompt('请输入存入金额')
+        //     var yue=cunru-0+now;
+        //     alert('您的余额为'+yue+'元');
+        //     break;
+        //     case '2' :var qu=prompt('请输入取出金额');
+        //     if (now-qu < 0){
+        //         alert('您的余额不足');
+        //     }else {
+        //         var yue = now-0-qu;
+        //         alert('您的余额为'+yue+'元');
+        //         break;
+        //     }
+        //     case '3' :alert('您的余额为'+now+'元');
+        //     case '4' :alert('您已成功退出');
+        // }
+
+
+// 将arr1中大于10的数挑选出来
+        // var arr1 = [2, 0, 1, 6, 77, 0, 52, 0, 25, 7];
+        // var arr2 = [];
+        // var j = 0;
+        // for (var i = 0; i < arr1.length; i++) {
+        //     if (arr1[i] > 10) {
+        //         arr2[j] = arr1[i];
+        //         j++;
+        //     }
+        // }
+        // console.log(arr2);
+
+// 将arr1排序
+        // var arr1 = [2, 0, 1, 6, 77, 0, 52, 0, 25, 7];
+        // var arr2 = [];
+        // for (var i = 0; i < arr1.length; i++){
+        //     if (arr1[i] != 0){
+        //         arr2[arr2.length] = arr1[i];
+        //     }
+        // }
+        // console.log(arr2);
+
+// 将arr1里面的元素调换位置
+        // var arr1 = ['red','black','pink','blue'];
+        // var arr2 = [];
+        // for (var i = 0; i < arr1.length; i++){
+        //     arr2[arr1.length-i-1] = arr1[i];
+        // }
+        // console.log(arr2);
+
+// 从一个人为输入的数组中选取最大的那一个
+        // function getMax(arr) {
+        //     var max = arr[0];
+        //     for (var i = 1; i <= arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // var re = getMax([5, 6, 4, 2, 5, 2, 4, 2, 5, 2, 45, 2, 4, 5, 12]);
+        // console.log(re);
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?pyzbi1');
+            src: url('fonts/icomoon.eot?pyzbi1#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?pyzbi1') format('truetype'),
+                url('fonts/icomoon.woff?pyzbi1') format('woff'),
+                url('fonts/icomoon.svg?pyzbi1#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        .all {
+            position: relative;
+            background-color: skyblue;
+            width: 100px;
+            height: 20px;
+            margin: 100px auto;
+            font-size: 17px;
+            cursor: default;
+        }
+
+        .all i {
+            position: absolute;
+            right: 0;
+            font-family: 'icomoon';
+            font-style: normal;
+        }
+
+        .boxone {
+            /* display: none; */
+            position: absolute;
+            top: 26px;
+            background-color: pink;
+            height: 300px;
+            width: 100px;
+            transition: all .5s;
+        }
+
+        .boxtwo {
+            /* display: none; */
+            top: 14px;
+            position: absolute;
+            right: 0px;
+            height: 0;
+            width: 0;
+            border: 6px solid transparent;
+            border-bottom-color: pink;
+            transition: all .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all"><span>打开文件</span>
+        <i></i>
+        <div class="boxtwo"></div>
+        <div class="boxone"></div>
+    </div>
+    <script>
+        var boxone = document.querySelector('.boxone');
+        var boxtwo = document.querySelector('.boxtwo');
+        var i = document.querySelector('i');
+        var flag = 0;
+        i.onclick = function () {
+            if (flag == 0) {
+                boxone.style.display = 'block';
+                boxtwo.style.display = 'block';
+                i.innerHTML = '';
+                flag = 1;
+            } else {
+                boxone.style.display = 'none';
+                boxtwo.style.display = 'none';
+                i.innerHTML = '';
+                flag = 0;
+            }
+        }
+        console.log(boxone);
+        console.log(boxtwo);
+    </script>
+</body>
+
+</html>

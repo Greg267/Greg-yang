@@ -48,10 +48,104 @@
          <p>
             用到的标签有thead(表头),tbody(表躯干),tfoot(表注),th(可用于表头，也可以用于每一行开头的元素),tr(表格里的每一行),td(表格里的每一个单元格),如果就单纯用以上元素做表格，那么做成的表格每个单元格是隔开的,要想单元格合并在一起，就需要给table加上border-collapse: collapse; 
          </p>
-         <h2>2.单元格合并</h2>
+         <h3>单元格合并</h3>
          <p>
             如果要将多个单元格合并，就给最左上的单元格添加属性，如果是同一行的单元格合并，就给最左边的单元格添加colspan="",并在""内注明要合并的单元格数量，如果是同一列的单元格合并，就给最上方的单元格添加rowspan="",并在""内注明要合并的单元格的数量
          </p>
+         <h2>表单</h2>
+         <p>用于收集用户信息</p>
+            <h3>1.表单域</h3>
+           <p> 用于收集用户信息，并向后台传送，格式如下form /form</p>
+            <h3>2.表单控件</h3>
+            <ul> 
+                <li> button</li>
+            
+            定义可点击按钮(多数情况下，用于通过JavaScript启动脚本)
+            
+            <li>    checkbox</li> 
+            
+            定义复选框
+            
+            <li>     file</li> 
+            
+            定义输入字段和"浏览"按钮，供文件上传
+            
+            <li>     hidden</li> 
+            
+            定义隐藏的输入字段
+            
+            <li>    image</li> 
+            
+            定义图像形式的提交按钮
+            
+            <li>    password</li> 
+            
+            定义密码字段，该字段中的字符被掩盖
+            
+            <li>  radio</li> 
+            
+            定义单选按钮
+            
+            <li>    reset</li> 
+            
+            定义重置按钮，重置按钮会清除表单内的所有数据
+            
+            <li>    submit</li> 
+            
+            定义提交按钮，提交按钮会把表单form里的数据发送到后台服务器
+            
+            <li>   text</li> 
+            
+            定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符
+        </ul>
+            
+            3.元素名
+            给表单控件加名字，最好加上，以区别不同元素。但单选和多选的元素一定要有一个相同的名字，如
+            
+              <input type="radio" name="dog">表
+              <input type="radio" name="dog">单
+              <input type="checkbox" name="pig">表
+              <input type="checkbox" name="pig">单
+            
+            4.文本域(textarea)
+            适用于在表单里要输入一段文字的时候，格式如下
+            
+              <textarea></textarea>
+            
+            5.下拉表单(select)
+            用于选择项过多，页面不方便显示时，如选择出生年月日时，格式如下
+            
+              <select>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+              </select>
+            
+            可以在option中加上selected，使该元素默认显示
+            
+            6.value 
+            可以给后台反馈消息，也可以用于text里预先显示文】字，也可以用于定义submit里的文字格式如下
+            
+              <input type="text" value="预先显示的字">
+              <input type="submit" value="表单">
+            
+            7.checked
+            如想让选择框开始就是被选择的状态，可以在后面加上checked，格式如下
+            
+            <input type="checkbox" checked="checked">
+            
+            8.maxlength
+            用于text里，规定可输入文本最多字数，格式如下
+            
+            <input type="text" maxlength="0">
+            
+            9.label
+            用于单选或多选框，使点击选择框前面或后面的元素也能使选择框被选择，格式如下
+            
+              <label for="0">表单</label><input type="radio" id="0">
+            
+            注意组合是 for 和 id</p>
          </div>
     </div>
     <!-- right -->
