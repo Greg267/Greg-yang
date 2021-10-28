@@ -193,7 +193,7 @@
         // console.log(re);
 
     </script>
-    <style>
+    <!-- <style>
         * {
             margin: 0;
             padding: 0;
@@ -278,7 +278,17 @@
         }
         console.log(boxone);
         console.log(boxtwo);
+    </script> -->
+    <script>
+        var arr = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b'];
+        var arr1 = [];
+        for(var i = 0;i<arr.length;i++){
+            if(arr1.indexOf(arr[i])==-1){
+                arr1.push(arr[i]);
+            }
+        }
+        console.log(arr1);
     </script>
-</body>
+    </body>
 
 </html>

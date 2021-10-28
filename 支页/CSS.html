@@ -18,13 +18,14 @@
         <!-- header -->
         <div class="header">
             <!-- logo -->
+            <div class="container">
             <div class="logo">
                 <img src="../images/logo3.png" alt="">
                 <span>Greg-yang</span>
             </div>
             <!-- nav -->
             <div class="nav">
-                <ul>
+                <ul class="you">
                     <li><a href="../index.html"><span></span>首页</a></li>
                     <li><a href="#"><span></span>标签</a></li>
                     <li><a href="#"><span></span>分类</a></li>
@@ -34,6 +35,7 @@
                     <li><a href="#"><span></span> 友人帐</a></li>
                 </ul>
             </div>
+        </div>
 
         </div>
     </div>
@@ -103,25 +105,44 @@
             <p>visibility:visible;元素可见</p>
             <p>visibility:hidden;元素隐藏</p>
             <p>visibility隐藏元素后，继续占有原来的位置</p>
-            <h3>
+            <h4>
                 <p>如果隐藏元素想要原来位置，就用visibility：hidden</p>
                 <p>如果隐藏元素不想要原来位置，就用display：none(用处更多重点)</p>
-            </h3>
-            <h3>overflow属性</h3>
+            </h4>
+            <h4>overflow属性</h4>
             <p>如果说一个盒子里面的内容超过了这个盒子的容载量，那么多余的内容就会超出盒子显示</p>
             <p>overflow:visible;溢出的内容能看到，跟不写这个属性没区别</p>
             <p>overflow:hidden;溢出的内容不能看到，但是还存在，不是删掉</p>
             <p>overflow:scroll;可以显示滚动条，但不管是否超出盒子，都会显示滚动条</p>
             <p>overflow:auto;超出自动显示滚动条，不超出不显示滚动条</p>
             </p>
-            <h2>字体图标</h2>
+            <h3>字体图标</h3>
             <p>轻量级：一个图标字体要比一系列额图像小很多。一旦字体加载了，图标就会马上渲染出来，减少了服务器请求</p>
             <p>灵活性：本质是文字，可以很随意的改变颜色，产生阴影，透明效果，旋转等</p>
             <p>兼容性：几乎支持所有的浏览器，请放心使用</p>
             <p>注意：字体图标不能代替精灵技术，只是对工作中图标部分技术的提升和优化。</p>
-            <h3>结构和样式比较简单的小图标，就用字体图标。结构和样式比较复杂一定的小图片，就用精灵图</h3>
+            <h4>结构和样式比较简单的小图标，就用字体图标。结构和样式比较复杂一定的小图片，就用精灵图</h4>
+            <h2 id="">
+                <>小技巧
+            </h2>
+            <h3>取消表单轮廓和防止拖拽文本域</h3>
+            <p>取消表单轮廓，就给表单加上一个outline:none或者是0;</p>
+            <p>防止拖拽文本域，就给文本域加上一个resize:none;</p>
+            <h3>vertical-align属性应用</h3>
+            <p>经常用于设置图片或者表单(行内块元素)和文字垂直对齐，只对行内元素和行内块元素有效</p>
+            <img src="../images/笔记截图/vertical-align的值.png" alt="">
+            <h3>图片底侧空白缝隙解决方案</h3>
+            <p>在一个盒子中的图片会与盒子的边框保持一定距离，原因是图片是和文字基线对齐的，比如字母p j等，下面还有一小截尾巴，所以图片会把这部分距离留出来，导致出现空白，要解决这个问题，可以给图片加上vertical-algin：后接一个除基线对齐的属性，就可以使空白消失</p>
+            <h3>文字溢出省略号显示</h3>
+            <h4>单行文字溢出省略号显示</h4>
+            <p>三个条件：1.先强制一行内显示文本，用white-space：nowrap；(默认normal自动换行)。2.超出的部分隐藏，用overflow：hidden；3.文字用省略号代替超出的部分，用text-overflow：ellipsis；</p>
+            <h3>margin负值巧妙运用</h3>
+            <p>如果多个盒子挨在一起，边框会重叠导致边框变厚，这时可以给所有的盒子加上一个margin的负值，值为边框的宽度</p>
+            <p>如果要给上述盒子加上一个hover并且要改变与边框有关的元素，则需要加上一个position：relative；如果不加的话，则相邻的边框会盖住边框，加上了position：relative；可以保留盒子的位置，并且提高盒子的z-index</p>
+            <h3>文字环绕图片</h3>
+            <p>给图片加上float即可，文字不做处理</p>
+            <h3>三角强化    </h3>
         </div>
-
     </div>
     <!-- right -->
     <div class="right clearfix">
