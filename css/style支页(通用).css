@@ -37,6 +37,7 @@ body {
     width: 100%;
     height: 330px;
     overflow: hidden;
+    background-size: cover;
 }
 .header {
     float: left;
@@ -46,13 +47,17 @@ body {
     position: fixed;
     z-index: 1;
 }
+.container {
+    max-width: 1460px;  
+    margin: 0 auto; 
+}
 .logo{
     float: left;
     height: 80px;
     margin-left: 200px;
 }
 .logo img{
-    float:left;
+    vertical-align: middle;
     transition: all 0.5s;
 }
 .logo img:hover{
@@ -60,15 +65,17 @@ body {
     transform: rotate(360deg);
 }
 .logo span {
-    float: left;
     height: 80px;
     line-height: 80px;
     font-size: 25px;
 }
 .nav {
-    float: left;
     height: 80px;
     margin-left: 240px;
+}
+.you {
+    margin-left: 15%;
+    float: left;
 }
 .nav ul li {
     float:left;
@@ -91,11 +98,15 @@ body {
 .nav ul li a {
     display: inline-block;
     color: black;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 0 25px;
 }
 .nav ul li a:hover {
     background-color:rgba(124, 112, 152,.2);
+}
+.shengti {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 .left {
     overflow: hidden;
@@ -121,9 +132,6 @@ body {
 .content {
     padding: 50px;
 }
-.content.right ul li {
-    padding-left: 2em;
-}
 .left .content p {
     text-indent: 2em;
     line-height: 2.5em;
@@ -146,6 +154,9 @@ body {
     box-shadow:0 1px 20px 2px rgb(0, 0, 0 , 30%);
     position: sticky;
     top: 90px;
+}
+.content.right ul li {
+    padding-left: 2em;
 }
 .right h2 {
     padding: 48px;
