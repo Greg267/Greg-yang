@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 1content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Bookmark" type="image/x-icon" href="images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png" />
+    <title>C语言</title>
+    <link rel="stylesheet" href="../css/style支页(通用).css">
+</head>
+
+<body>
+    <!-- footer -->
+    <div class="head">
+        <!-- header -->
+        <div class="header">
+            <!-- logo -->
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/logo3.png" alt="">
+                    <span>Greg-yang</span>
+                </div>
+                <!-- nav -->
+                <div class="nav">
+                    <ul class="you">
+                        <li><a href="../index.html"><span></span>首页</a></li>
+                        <li><a href="#"><span></span>标签</a></li>
+                        <li><a href="#"><span></span>分类</a></li>
+                        <li><a href="#"><span></span> 时间轴</a></li>
+                        <li><a href="#"><span></span>Greg</a></li>
+                        <li><a href="#"><span></span> at作者</a></li>
+                        <li><a href="#"><span></span> 友人帐</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shengti clearfix">
+        <!-- 以上可通用 -->
+        <!-- content -->
+        <!-- left -->
+        <div class="left clearfix">
+            <div class="left-head">
+                <h1>C语言</h1>
+            </div>
+            <div class="content">
+                <h2>7.基本数据类型</h2>
+                <h3>7.1.整型</h3>
+                <img src="../images/笔记图片/整型.png" alt="">
+                <p>short表示长度也就是大小比较小的数字，long则相反，signed表示有符号(正负号)的数字，unsigned表示无符号数字，数字默认是有符号的</p>
+                <img src="../images/笔记图片/整型进制表示.png" alt="">
+                <img src="../images/笔记图片/整型的输入输出.png" alt="">
+                <img src="../images/笔记图片/整型的输入输出1.png" alt="">
+                <h3>7.2.浮点型</h3>
+                <img src="../images/笔记图片/浮点数类型.png" alt="">
+                <p>float用于精度没那么高的数，double 用于精度更高的数，long double
+                    用于精度更高的数，但没那么常用。单精度32位，双精度(double)64位，浮点数以科学计数法存储，每一个数都由符号，指数和小数三部分组成，符号占一个比特，指数部分占8个比特，小数部位占23位，当要用到小数时，要确定小数的精度，如果想要精度更高的话，则需在声明变量时用doubl
+                    变量名 的格式</p>
+                <h4>浮点型常量</h4>
+                <p>小数形式；必须有小数点，如3.14 -12.5等</p>
+                <p>指数形式：数字 e(E) 指数部分 如3.14e-3 2.57e8 等</p>
+                <p>浮点型常量通常以double类型存放，如果想以单精度存放，则在数字后加F或f，如果想以long double 类型存放，则在数字后加L或l</p>
+                <img src="../images/笔记图片/浮点型的输入输出.png  " alt="">
+                <h3>7.3.字符型</h3>
+                <p>用char声明变量，赋值时要给值加上单引号，当计算机中出现字符时，C语言只是使用它对应的整数值</p>
+                <p>char的类型：signed char 有符号的char 表示范围-128~127;unsigned char 表示范围0~255</p>
+                <h4>a.转义序列</h4>
+                <p>分为两种，一种是字符转义，就是平常用的\n \a(响铃) 这种，但它的局限性在于它并没有把所有不可打印的字符涵盖进去</p>
+                <img src="../images/笔记图片/字符转义序列.png" alt="">
+                <p>另一种是数字转义序列,可以涵盖所有的不可打印的字符<img src="../images/笔记图片/转义序列.png" alt=""></p>
+                <h4>b.读写字符</h4>
+                <p>scanf</p>
+                <img src="../images/笔记图片/读写字符.png" alt="">
+                <p>注意，scanf函数读取字符时不会跳过空白字符</p>
+                <img src="../images/笔记图片/读写字符的注意事项.png" alt="">
+                <p>getchar和putchar</p>
+                <img src="../images/笔记图片/getchar和putchar.png" alt="">
+                <strong>
+                    <p>注意两个单独，putchar输出单独一个字符，getchar读取单独一个字符，且getchar读取时不会跳过空白</p>
+                </strong>
+                <p>一些运用：getchar可以直接用于控制循环的表达式中，如遇到空格时循环终止，则代码可以是while(getchar()!='');getchar也可用于在循环中搜寻字符，也可用于跳过不确定数量的相同字符或空格
+                </p>
+                <h3>7.4.类型转换</h3>
+                <img src="../images/笔记图片/类型转换类型.png" alt="">
+                <h4>a.隐式转换</h4>
+                <img src="../images/笔记图片/类型转换使用场景.png" alt="">
+                <p>算术转换：常用算术转换常用于二元运算符的操作数上；</p>
+                <p>转换规则：较低级转向较高级，即所谓的提升；</p>
+                <p>若任一数据类型是浮点型，则把数据类型都转换为数据中存在的最高精度的浮点型；float< double< long double</p>
+                        <p>若所有数据类型均不为浮点数，则把所有的数据类型转换为数据中存在的最高精度整数类型；int< unsigned int< long int< unsigned long int</p>
+                                <p>赋值中的类型转换规则：把赋值运算符右侧表达式的值转换为左侧变量的类型</p>
+                                <p>注意：浮点数赋值给整型变量会去掉该数的小数部分；若表达式的值超出了变量类型的范围，则会得到预期以外的结果；如果将一个浮点常量赋值给一个float变量，最好在改常量后加一个后缀f
+                                </p>
+                                <h4>b.强制类型转换</h4>
+                                <p>表示类型：(类型)变量或(类型)(表达式)</p>
+                                <h3>7.5.类型定义</h3>
+                                <p>类型定义用于对另一个数据类型创建一个别名</p>
+                                <p>语法规则：typedef type declaration; type就是int float 等，declaration就是别名，自己取的</p>
+                                <p>注意：一个类型定义声明并没有创建一个新的类型，仅仅是对某个已有的类型增加一个新名称而已</p>
+                                <p>类型定义可以使代码更容易理解，当对数据类型定义后，在后面的代码中就可以使用别名来代替数据类型，如创建两个变量表示身高，一般用法 float a，b； 但当我们
+                                    typedef float height; 之后，我们就可以这样 height a,b; 效果一样，但比前面的那种更好理解；
+                                    类型定义还可以使修改数据的类型更加容易，如我们先 typedef int number;
+                                    这时的number是int，但当int的位数不够时，我们则需要修改数据类型，就可以直接把int 改成更高精度的int，如 unsigned int , long int
+                                </p>
+                                <h3>7.6.sizeof运算符</h3>
+                                <p>sizeof是取数据类型、常量、变量或者表达式值的存储长度的运算符(以字节为单位)；
+                                    语法规则：sizeof(数据类型说明符/表达式)；如sizeof(int),sizeof(i+j)
+                                </p>
+                                <h2>8.数组</h2>
+                                <h3>8.1.一维数组</h3>
+                                <p>数组是含有多个数据值的数据结构，每个数据值具有相同的数据类型；这些数据值被称为元素；数组内可以根据元素所处的位置对其进行单独访问；简而言之，数组是相同性质的一组数据的组合，数组元素的数据类型相同，个数确定.
+                                </p>
+                                <p>声明一个数组：类型定义符 数组名[常量表达式]，常量表达式是数组元素的个数,元素索引从0开始</p>
+                                <h3>8.2.数组的初始化</h3>
+                                <p>数组可在声明时赋值，获得一个初始值，格式为 数据类型定义 arr[数组元素个数]{数组元素，用逗号隔开}，若赋的数组元素少于[]中的数量，则少的数字默认为0</p>
+                                <p>指定初始化式：一个数组里面只有几个数要赋值，其他都为0，则可采用指定初始化赋值，格式为 数据类型定义
+                                    arr[数组元素个数]{[n]=元素，[i]=元素，[j]=元素，...}，表示数组内的第n+1，i+1.j+1个元素自己定义，其他全为0</p>
+                                <p>小技巧：用数组的大小除以数组元素的大小可以得到数组的长度 sizeof(a) / sizeof(a[0])
+                                    sizeof是获取数组的字节总数，用字节总数除单个元素的字节长度，即可得到数组的长度，这个经常用到。但sizeof返回的是无符号整型，无符号整型和有符号整型比较是很危险的，所以我们要将
+                                    sizeof(a) / sizeof(a[0]) 强制转换为有符号整数，格式为 (int)(sizeof(a) / sizeof(a[0]))
+                                </p>
+                                <h3>8.3.二维数组</h3>
+                                <img src="../images/笔记图片/二维数组.png" alt="">
+                                <img src="../images/笔记图片/二维数组1.png" alt="">
+                                <p>二维数组按照行主序存储数组，从第0行开始顺序存储，接着第一行，如此下去</p>
+                                <h3>8.4.字符数组</h3>
+                                <img src="../images/笔记图片/字符数组.png" alt="">
+                                <strong>
+                                    <p>注意：用字符串常量初始化时，自动加结束标志\0 </p>
+                                </strong>
+                                <p>字符数组的输入输出</p>
+                                <img src="../images/笔记图片/字符数组的输入输出.png" alt="">
+                                <p>二维字符数组，和二维数组用法规则一样</p>
+                                <p>一些相关知识</p>
+                                <p><img src="../images/笔记图片/字符串连接函数.png" alt=""></p>
+                                <p><img src="../images/笔记图片/字符串拷贝函数.png" alt=""></p>
+                                <p>注意：字符串拷贝函数会将数组二的内容<strong>替换</strong>数组一的内容,空字符为'\0'</p>
+                                <p><img src="../images/笔记图片/字符串比较函数.png" alt=""></p>
+                                <p><img src="../images/笔记图片/测试字符串长度函数.png" alt=""></p>
+                                <h2>9.函数</h2>
+                                <h3>9.1.函数的定义和调用</h3>
+                                <h4>9.1.1函数构造</h4>
+                                <p><img src="../images/笔记图片/函数.png" alt=""></p>
+                                <p>格式<img src="../images/笔记图片/函数格式.png" alt=""></p>
+                                <p>每个形式参数需要说明其类型；形式参数间用逗号进行分隔。
+                                    如果函数没有形式参数，那么在圆括号内应该出现void，或者什么都不写</p>
+                                <p>函数体内声明的变量专属于此函数，其他函数不能对这些变量进行检查或修改。
+                                </p>
+                                <h4>9.2.2函数调用</h4>
+                                <img src="../images/笔记图片/函数调用.png" alt="">
+                                <p>Tips：1.如果函数有参数，那么调用时实际参数前不能加类型
+                                    2.调用时函数前也不能加返回类型
+                                </p>
+                                <h3>9.2.函数声明和实际参数</h3>
+                                <h4>9.2.1.函数声明</h4>
+                                <p>当函数构造在函数调用之后时，编译器第一次遇到函数调用时，会自动给函数一个隐式声明，定义函数的数据类型，当后面遇到函数构造时则会报错，所以函数构造要在函数调用之前，但这不现实，所以因此有了函数声明，它可以让编译器先对函数有个初步的了解，当后面遇到函数构造时才不会报错
+                                </p>
+                                <p>格式：返回类型 函数名 ( 形式参数 ) ;
+                                </p>
+                                <h4>9.2.2.实际参数</h4>
+                                <p>函数在被调用时要给出实际参数，实际参数将值复制给形参，自身的值不会受到函数内部的影响</p>
+                                <p>9.2.2.1.实际参数的转换</p>
+                                <img src="../images/笔记图片/实际参数的转换.png" alt="">
+                                <p>9.2.2.2.数组型实际参数</p>
+                                <p>1.数组可以作为函数的参数，当形式参数是一维数组时，可以不说明数组的长度 2.在把数组名传递给函数时，不要在数组名的后边放置方括号 3.改变数组形参就能改变数组实参 4.如果形式参数是多维数组，则只有第一维的长度可以省略</p>
+                                <h3>9.3.函数返回和程序终止</h3>
+                                <h4>9.3.1.函数返回</h4>
+                                <p>函数在完成的时候，需要返回到调用它的地方，这时需要用到return语句</p>
+                                <p>格式如下：return [表达式];</p>
+                                <p>tips：1.表达式是可选的，只有非void返回类型的函数必须有，否则就不应该有。2.如果表达式的类型和函数的返回类型不匹配，那么系统将会把表达式的类型隐式转换成返回类型；3.在void返回类型的函数中，如果return语句是最后一条，那么这条return语句是可以忽略的</p>
+                                <h4>9.3.2.程序终止</h4>
+                                <p>在main函数中执行return会终止程序</p>
+                                <p>exit函数</p>
+                                <img src="../images/笔记图片/exit函数.png" alt="">
+                                <h3>9.4.函数递归</h3>
+                                <p>在特殊的场合，一个函数可以自己调用自己，那么此函数就是递归的，如计算某个数的阶乘，或某种行为多次重复运用</p>
+                                <h2>10.程序结构和变量作用域</h2>
+                                <h3>10.1局部变量</h3>
+                                <p>在函数体内声明的变量称为该函数的局部变量</p>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="right clearfix">
+            <h2>目录</h2>
+            <ul>
+                <li><a href="#"></a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
