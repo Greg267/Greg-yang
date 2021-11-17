@@ -279,7 +279,7 @@
         console.log(boxone);
         console.log(boxtwo);
     </script> -->
-    <script>
+    <!-- <script>
         var arr = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b'];
         var arr1 = [];
         for(var i = 0;i<arr.length;i++){
@@ -288,6 +288,46 @@
             }
         }
         console.log(arr1);
+    </script> -->
+    <!-- 求某个字符所出现的位置和次数 -->
+    <!-- <script>
+        var str=prompt("请输入字符串");
+        var b=prompt("请输入字符");
+        var n=1;
+        var arr=[];
+        var d=0;
+        for (var i = 1; i <= str.length; i++) {
+            if ((str.indexOf(b, n)) != -1) {
+                arr[arr.length] = str.indexOf(b, n)+1;
+                c = str.indexOf(b, n);
+                n=c+1;
+                d++
+            }
+        }
+        
+        console.log(arr, d); -->
+    <script>
+        var a = prompt("请输入字符串");
+        var o = {};
+        var max = 0;
+        var ch = '';
+        for (var i = 0; i < a.length; i++) {
+            var chars = a.charAt(i);
+            if (o[chars]) {
+                o[chars]++;
+            } else {
+                o[chars] = 1;
+            }
+        }
+        for (var k in o) {
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max, ch);
+    </script>
+
     </script>
     </body>
 
