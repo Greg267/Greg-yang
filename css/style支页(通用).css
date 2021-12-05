@@ -135,6 +135,7 @@ body {
 .left .content p {
     text-indent: 2em;
     line-height: 2.5em;
+    letter-spacing: 1px;
 }
 .left .content img{
     transition: all 0.5s;
